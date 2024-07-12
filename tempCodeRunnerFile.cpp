@@ -1,30 +1,17 @@
-#include <iostream>
-#include <string>
-#include <algorithm>
-using namespace std;
+0;
+  // for (int i = 0; i < s.length(); i++)
+  // {
+  //   int val = 0;
+  //   int n = s[i] - s[i + 1];
+  //   if (s[i] > s[i + 1])
+  //   {
+  //     val = 26 - n;
+  //   }
+  //   else
+  //   {
+  //     val = 26 + n;
+  //   }
 
-int main()
-{
-
-  string x;
-  cin >> x;
-  int size = x.size();
-  sort(x.begin(), x.end());
-  int ans = 0;
-  int counter = 0;
-
-  for (int i = 0; i <= size; i++)
-  {
-    if (x[i] == x[i + 1])
-    {
-      counter++;
-    }
-  }
-  ans = size - counter;
-  if (ans % 2 == 0)
-    cout << "CHAT WITH HER!" << endl;
-  else
-    cout << "IGNORE HIM!" << endl;
-
-  return 0;
-}
+  //   ans += abs(val);
+  //   cout << ans << endl;
+  // }
