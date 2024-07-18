@@ -20,15 +20,19 @@ int main()
     x--;
     y--;
 
-    if (y < arr[x] - 1)
+    if (x > 0)
+    {
+      arr[x - 1] += y;
+    }
+
+    if (x < n - 1)
     {
       arr[x + 1] += (arr[x] - y - 1);
     }
-    if (y > 0)
-      arr[x - 1] += y;
 
-    arr[x] == 0;
+    arr[x] = 0;
   }
+
   for (int i = 0; i < n; i++)
   {
     cout << arr[i] << endl;
