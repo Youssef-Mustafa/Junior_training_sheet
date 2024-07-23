@@ -3,8 +3,8 @@ using namespace std;
 
 int main()
 {
-
-  cout << 30 % 10 << endl;
+  int n = 3;
+  cout << 5 % n << endl;
 
   return 0;
 }
