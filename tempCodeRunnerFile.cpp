@@ -1,12 +1,15 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 int main()
 {
-  int size, dist;
-  cin >> size >> dist;
+  unsigned int n;
+  while (cin >> n && n != 0)
+  {
+    unsigned int sq = (int)sqrt(n);
+    cout << ((sq * sq == n) ? "yes\n" : "no\n");
+  }
 
-  for (int i = 0; i < size; i++)
-    cout << (char)('a' + (i % dist));
   return 0;
 }
